@@ -241,30 +241,20 @@ img {
 width: 270px;
 }
 
-.features .item::before {
-  content: ' ';
-  display: block;
+
+.feature-div{
   height: 120px;
   margin-bottom: 30px;
   background-color: #F5F4FA;
-  background-repeat: no-repeat;
-  background-position: center;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.icon-antenna::before {
- background-image: url(../images/antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.icon-diagram::before {
-background-image: url(../images/diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/astronaut.svg);
+.icon-features {
+  width: 70px;
+  height: 70px;
 }
 
 .visually-hidden {
@@ -279,6 +269,8 @@ background-image: url(../images/diagram.svg);
   clip-path: inset(50%);
   margin: -1px;
 }
+
+
 /* Work List */
 .section-work {
   padding-top: 0;
@@ -602,9 +594,17 @@ margin-top: 0;
 }
 
 .portfolio p {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   margin-top: 0px;
   margin-bottom: 0px;
+  color: var(--primary-text-color);
+}
+
+.card:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
